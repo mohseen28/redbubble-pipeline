@@ -1,0 +1,95 @@
+# Redbubble product export sizes (60 products).
+# Source: Redbubble Help Center, "Product Dimension Requirements"
+# (help.redbubble.com, article 202270679), read 6 Nov 2026.
+# Values are Redbubble's MINIMUM pixel sizes. Re-check that page before each
+# season and edit only this file.
+#
+# Syntax:
+#   defaults:  applied to every product
+#   groups.<category>._:  group defaults (override `defaults`)
+#   <product>: [w, h]  or  {size: [w, h], <overrides>}
+#   enabled: false  on a product, or in a group's `_`, skips it.
+# Keys: transparent (bool), format (png|jpg), margin_pct (per side, % of each
+# canvas dimension), anchor (center|top|bottom|left|right|top_left|top_right|
+# bottom_left|bottom_right), scale (canvas multiplier, default 1.0).
+
+defaults: {transparent: false, format: jpg, margin_pct: 5, anchor: center, scale: 1.0}
+
+groups:
+  apparel:
+    _: {transparent: true, format: png, margin_pct: 4}
+    other_apparel: [2400, 3200]
+    premium_tshirt: [2875, 3900]
+    mens_graphic_tshirt: [3873, 4814]
+    womens_sleeveless_top: [3870, 4280]
+    baseball_cap: [2400, 1140]
+    bucket_hat: [2040, 1140]
+
+  wearables:
+    pin: [1000, 1000]
+    scarf: [5748, 5748]
+    socks: [5848, 6300]
+    womens_a_line_dress: [6310, 6230]
+
+  bags:
+    zipper_pouch: [4600, 3000]
+    aop_tote_small: [2175, 2175]
+    aop_tote_medium: [2625, 2625]
+    aop_tote_large: [2950, 2950]
+    backpack: [4575, 3900]
+    laptop_sleeve: [4125, 2956]
+    cotton_tote: {size: [2400, 3200], transparent: true, format: png, margin_pct: 4}
+
+  phone_cases:
+    phone_case: [1187, 1852]
+    magsafe_phone_case: [1332, 2051]
+
+  home:
+    acrylic_block: [1860, 1860]
+    apron: [4065, 4950]
+    bath_mat: [6480, 4320]
+    clock: [2940, 2940]
+    coaster: [1860, 1860]
+    duvet_cover: [7632, 6480]
+    jigsaw_puzzle: [9075, 6201]
+    magnet: [2800, 2800]
+    mug_standard: [2700, 1120]
+    mug_tall: [2700, 1624]
+    shower_curtain: [7632, 6480]
+    tapestry: [7632, 6480]
+    throw_blanket: [7632, 6480]
+    throw_pillow: [3225, 3225]
+
+  stickers:
+    _: {transparent: true, format: png, margin_pct: 3}
+    sticker_small: [600, 800]
+    sticker_medium: [1100, 1100]
+    sticker_large: [1700, 1700]
+    sticker_xl: [2800, 2800]
+
+  stationery:
+    greeting_card: [1300, 900]
+    postcard: [1300, 900]
+    desk_mat: [8268, 4331]
+    hardcover_journal: [3502, 2385]
+    mouse_pad: [2559, 2165]
+    spiral_notebook: [1756, 2481]
+
+  wall_art:
+    art_print: [3840, 3840]
+    art_board_print_square: [3060, 3060]
+    art_board_print_ratio_1_4: [1560, 2160]      # portrait only
+    art_board_print_ratio_1_5: [1260, 1860]      # portrait only
+    art_board_print_ratio_1_25: [3360, 4260]     # portrait only
+    framed_canvas_small: [2400, 1600]
+    framed_canvas_medium: [3240, 2160]
+    framed_canvas_large: [3840, 2560]
+    framed_canvas_xl: [4800, 4800]
+    photo_print_small: [2500, 3500]
+    photo_print_medium: [3500, 5000]
+    photo_print_large: [5000, 7100]
+    photo_print_xl: [9144, 6096]
+    poster_xs: [2870, 4100]
+    poster_small: [4100, 5840]
+    poster_medium: [5840, 8310]
+    poster_large: [8310, 11790]

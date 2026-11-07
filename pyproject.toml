@@ -1,0 +1,74 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "redbubble-pipeline"
+version = "1.1.0"
+description = "AI design pipeline that exports correctly sized images for every Redbubble product (Kaggle edition)."
+requires-python = ">=3.11"
+readme = "README.md"
+dependencies = [
+    "pydantic>=2.6",
+    "typer>=0.12",
+    "PyYAML>=6.0",
+    "requests>=2.31",
+    "numpy>=1.26",
+    "Pillow>=10.2",
+    "opencv-python-headless>=4.8",
+]
+
+[project.optional-dependencies]
+gpu = [
+    "torch",
+    "diffusers>=0.32",
+    "transformers>=4.46",
+    "accelerate>=1.0",
+    "bitsandbytes>=0.45",
+    "sentencepiece",
+    "protobuf",
+    "open_clip_torch>=2.26",
+    "rembg>=2.0.57",
+    "onnxruntime-gpu",
+    "spandrel>=0.4",
+]
+notebook = ["ipywidgets>=8.1"]
+dev = ["pytest>=8", "pytest-mock>=3.12", "ruff>=0.5", "mypy>=1.10", "types-PyYAML", "types-requests", "ipywidgets>=8.1", "nbformat>=5.9"]
+
+[project.scripts]
+pipeline = "pipeline.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["pipeline*"]
+
+[tool.setuptools.package-data]
+pipeline = ["prompts/*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "slow: full 60-product dry-run export (deselect with -m 'not slow')",
+]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF"]
+ignore = ["RUF001", "RUF002", "RUF003", "B008"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+files = ["pipeline"]
+plugins = ["pydantic.mypy"]
+
+[[tool.mypy.overrides]]
+module = [
+    "cv2", "cv2.*", "rembg", "rembg.*", "diffusers", "diffusers.*", "transformers", "transformers.*",
+    "open_clip", "open_clip.*", "spandrel", "spandrel.*", "torch", "torch.*", "ipywidgets", "ipywidgets.*",
+    "IPython", "IPython.*", "kaggle_secrets",
+]
+ignore_missing_imports = true

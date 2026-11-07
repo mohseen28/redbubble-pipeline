@@ -1,0 +1,14 @@
+# Normalised phrases that must never be flagged by fuzzy matching.
+# One per line; matched against whole n-grams of the text.
+reliable
+mushroom
+cottage
+people
+twister
+fortnight
+metallic
+mobius
+transforms
+channel
+browser
+banks

@@ -1,0 +1,7 @@
+pytest==9.2.0
+pytest-mock
+ruff==0.17.4
+mypy==2.4.1
+types-PyYAML
+types-requests
+nbformat

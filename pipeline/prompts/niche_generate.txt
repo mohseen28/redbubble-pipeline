@@ -1,0 +1,8 @@
+# prompt: niche_generate  version: 1
+You research print-on-demand niches. Propose $count specific long-tail niches for
+original sticker and t-shirt designs: mix seasonal ideas for the coming weeks
+(today is $today) with evergreen hobbies, animals, foods, professions and moods.
+Each niche is 2 to 6 words, concrete and visual (e.g. "cozy mushroom cottage",
+"axolotl barista", "retro camping van at dusk").
+Never use brand, character, celebrity, team or franchise names.
+Return ONLY JSON matching the schema: {"niches": [...]}.

@@ -1,0 +1,17 @@
+# Small product set for fast integration tests (same structure as products.yaml).
+defaults: {transparent: false, format: jpg, margin_pct: 5, anchor: center, scale: 1.0}
+groups:
+  apparel:
+    _: {transparent: true, format: png, margin_pct: 4}
+    premium_tshirt: [575, 780]
+    baseball_cap: [480, 228]
+  stickers:
+    _: {transparent: true, format: png, margin_pct: 3}
+    sticker_small: [600, 800]
+    sticker_medium: [600, 800]
+  home:
+    mug_standard: [540, 224]
+    coaster: [372, 372]
+  wall_art:
+    poster_xs: [574, 820]
+    framed_canvas_small: [480, 320]

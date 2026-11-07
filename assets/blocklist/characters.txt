@@ -1,0 +1,110 @@
+# Fictional characters. Ambiguous everyday words (e.g. stitch, belle, flash)
+# are excluded on purpose; add them back if your niches need it.
+mickey mouse
+minnie mouse
+donald duck
+winnie the pooh
+tigger
+eeyore
+simba
+mufasa
+buzz lightyear
+woody pride
+elsa
+moana
+ariel
+cinderella
+rapunzel
+pikachu
+charmander
+bulbasaur
+squirtle
+eevee
+jigglypuff
+mario
+luigi
+princess peach
+bowser
+yoshi
+link zelda
+kirby
+donkey kong
+spongebob
+squarepants
+patrick star
+bugs bunny
+daffy duck
+tweety
+scooby doo
+snoopy
+charlie brown
+garfield
+homer simpson
+bart simpson
+the simpsons
+rick and morty
+batman
+superman
+wonder woman
+spiderman
+spider man
+iron man
+captain america
+hulk
+deadpool
+groot
+baby yoda
+grogu
+yoda
+darth vader
+stormtrooper
+chewbacca
+r2d2
+c3po
+mandalorian
+gandalf
+frodo
+gollum
+harry potter
+hermione
+dumbledore
+voldemort
+shrek
+totoro
+naruto
+goku
+vegeta
+sailor moon
+luffy
+hatsune miku
+hello kitty
+kuromi
+my melody
+cinnamoroll
+pusheen
+grumpy cat
+care bears
+my little pony
+smurf
+smurfs
+paw patrol
+peppa pig
+bluey
+cocomelon
+teletubbies
+barney the dinosaur
+optimus prime
+bumblebee transformer
+godzilla
+king kong
+ghostface
+freddy krueger
+jason voorhees
+chucky
+pennywise
+hannibal lecter
+sherlock holmes bbc
+jack skellington
+sally skellington
+stitch disney
+despicable me

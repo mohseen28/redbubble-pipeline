@@ -1,0 +1,94 @@
+# Real people: celebrities, musicians, athletes, politicians, and living or
+# estate-managed ARTISTS (used for the artist-style check as well).
+taylor swift
+beyonce
+rihanna
+lady gaga
+ariana grande
+billie eilish
+harry styles
+justin bieber
+drake
+kanye west
+eminem
+snoop dogg
+elvis presley
+michael jackson
+freddie mercury
+david bowie
+the beatles
+rolling stones
+bob marley
+kurt cobain
+nirvana band
+metallica
+bts
+blackpink
+dolly parton
+marilyn monroe
+audrey hepburn
+keanu reeves
+tom cruise
+dwayne johnson
+pedro pascal
+zendaya
+timothee chalamet
+ryan gosling
+margot robbie
+nicolas cage
+danny devito
+bill murray
+oprah winfrey
+kim kardashian
+elon musk
+mark zuckerberg
+jeff bezos
+donald trump
+joe biden
+barack obama
+kamala harris
+queen elizabeth
+king charles
+michael jordan
+lebron james
+kobe bryant
+stephen curry
+lionel messi
+cristiano ronaldo
+serena williams
+tom brady
+travis kelce
+shohei ohtani
+simone biles
+# artists (style references are refused)
+greg rutkowski
+alphonse mucha
+hayao miyazaki
+banksy
+yayoi kusama
+takashi murakami
+keith haring
+jean michel basquiat
+andy warhol
+roy lichtenstein
+frida kahlo
+salvador dali
+pablo picasso
+henri matisse
+georgia okeeffe
+tim burton
+loish
+artgerm
+wlop
+ross tran
+sakimichan
+beeple
+mary blair
+lisa frank
+junji ito
+studio trigger
+moebius
+kim jung gi
+dr seuss
+charles schulz
+bill watterson

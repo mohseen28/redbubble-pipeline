@@ -1,0 +1,135 @@
+# Brands, franchises, studios, sports leagues and teams. One entry per line.
+# Matching is case-insensitive, whole-word, with fuzzy matching for longer names.
+# Deliberately EXCLUDED: brand names that are ordinary words (apple, target,
+# shell, gap, dove, jaguar, amazon, corona, subway, monster, puma, frozen, cars)
+# because they would block legitimate designs. Extend for your niches.
+nike
+adidas
+reebok
+under armour
+new balance
+gucci
+louis vuitton
+chanel
+prada
+versace
+balenciaga
+burberry
+dior
+fendi
+givenchy
+rolex
+coca cola
+pepsi
+starbucks
+mcdonalds
+burger king
+kfc
+taco bell
+red bull
+budweiser
+heineken
+jack daniels
+harley davidson
+ferrari
+lamborghini
+porsche
+mercedes benz
+bmw
+volkswagen
+toyota
+ford mustang
+google
+microsoft
+iphone
+ipad
+macbook
+samsung
+playstation
+xbox
+nintendo
+sega
+netflix
+youtube
+instagram
+tiktok
+facebook
+twitter
+spotify
+lego
+barbie
+hot wheels
+hello kitty
+sanrio
+pokemon
+disney
+pixar
+dreamworks
+marvel
+dc comics
+lucasfilm
+star wars
+star trek
+harry potter
+hogwarts
+lord of the rings
+game of thrones
+studio ghibli
+ghibli
+nickelodeon
+cartoon network
+looney tunes
+warner bros
+universal studios
+sesame street
+garfield
+transformers
+minecraft
+fortnite
+roblox
+among us
+call of duty
+league of legends
+world of warcraft
+overwatch
+zelda
+super mario
+sonic the hedgehog
+pac man
+tetris
+dungeons and dragons
+magic the gathering
+nfl
+nba
+mlb
+nhl
+fifa
+uefa
+premier league
+olympics
+super bowl
+world cup
+ncaa
+real madrid
+fc barcelona
+manchester united
+manchester city
+liverpool fc
+chelsea fc
+arsenal fc
+juventus
+bayern munich
+dallas cowboys
+new england patriots
+green bay packers
+kansas city chiefs
+los angeles lakers
+golden state warriors
+chicago bulls
+boston celtics
+new york yankees
+boston red sox
+los angeles dodgers
+chicago cubs
+toronto maple leafs
+peanuts comic

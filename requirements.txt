@@ -1,0 +1,10 @@
+# Core (CPU) dependencies - exact versions the test-suite was run with.
+# torch and numpy are NOT pinned: use the versions preinstalled on the Kaggle image
+# (re-pinning them would pull a different CUDA build). See DECISIONS.md.
+pydantic==2.14.3
+typer==0.28.0
+PyYAML==6.0.3
+requests==2.34.2
+Pillow==13.0.0
+opencv-python-headless==5.0.0.93
+ipywidgets==8.1.9

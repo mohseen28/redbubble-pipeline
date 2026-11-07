@@ -1,0 +1,65 @@
+# Redbubble AI Design Pipeline v1.1 (Kaggle edition) - runtime configuration.
+# Product dimensions live ONLY in products.yaml.
+# Relative paths: runtime.work_dir is relative to the current directory,
+# export.output_dir is relative to work_dir, safety.blocklist_dir is relative
+# to this file. Override any key from the CLI with --set key.path=value.
+
+run:
+  designs_per_batch: 10
+  briefs_per_niche: 5
+  max_qa_retries: 3
+  max_designs_per_run: 30        # about 360 MB of exports per design
+  min_free_disk_gb: 3
+
+runtime:
+  gpu_layout: auto               # auto | dual | single
+  work_dir: /kaggle/working
+
+llm:
+  backend: ollama
+  host: http://127.0.0.1:11434
+  text_model: qwen2.5:14b        # use qwen2.5:7b on a single small GPU
+  fallback_model: qwen2.5:7b
+  temperature: 0.8
+  num_ctx: 4096
+  keep_alive: 10m                # "0" in single-GPU mode (applied automatically)
+  max_json_retries: 2
+  request_timeout_s: 600
+  allow_text_on_design: false    # v1: designs are text-free
+
+imagegen:
+  backend: flux_schnell          # flux_schnell | sdxl | dry_run
+  width: 1024
+  height: 1024
+  steps: 4
+  guidance: 0.0
+  max_sequence_length: 256
+  quantization: nf4
+  compute_dtype: float16         # T4 has no bfloat16
+
+cutout: {model: u2net, alpha_matting: false}
+
+upscale: {model: realesrgan_x4plus_anime_6B, tile: 400, device: auto}
+
+qa:
+  clip_dedupe: true
+  similarity_threshold: 0.92
+  reference_dir: null
+  vision_qa: {enabled: false, model: "qwen2.5vl:7b", ip_risk_threshold: 0.35}
+
+review: {mode: manual}           # manual | auto
+
+export:
+  output_dir: output             # resolved under work_dir -> /kaggle/working/output
+  layout: by_category            # by_category | flat
+  dpi: 300
+  jpeg_quality: 95
+  max_scale_factor: 2.5
+  max_dim_px: 13500
+  max_file_mb: 300
+  only_groups: null              # e.g. [apparel, stickers] to trim the output
+
+metadata: {enabled: true, title_max: 100, tags_max: 15, tag_max_len: 30, desc_max: 1000, ai_disclosure: "Created with AI assistance."}
+
+safety:
+  blocklist_dir: assets/blocklist

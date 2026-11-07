@@ -1,0 +1,12 @@
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+data/
+output/
+models/
+work/
+pipeline.db*
+*.zip
+smoke/
