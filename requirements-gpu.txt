@@ -8,6 +8,6 @@ bitsandbytes==0.45.2       # NF4 on T4 (sm_75), float16 compute
 sentencepiece==0.2.0
 protobuf==5.29.3
 open_clip_torch==2.30.0    # ViT-B/32 duplicate check
-rembg==2.0.61              # u2net cutout
+rembg>=2.0.62            # u2net cutout
 onnxruntime-gpu==1.20.1
 spandrel==0.4.1            # loads official Real-ESRGAN weights (replaces basicsr/realesrgan)
